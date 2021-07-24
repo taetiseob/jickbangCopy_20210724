@@ -2,10 +2,14 @@ package com.nepplus.jickbangcopy_20210724
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.nepplus.jickbangcopy_20210724.adapters.RoomAdapter
 import com.nepplus.jickbangcopy_20210724.datas.RoomData
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+    lateinit var mRoomAdapter : RoomAdapter
     val mRoomList = ArrayList<RoomData>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,5 +24,8 @@ class MainActivity : AppCompatActivity() {
         mRoomList.add(RoomData(25500,"동대문구 제기동",1,"2번째 방"))
         mRoomList.add(RoomData(38000,"덕진구 금암동",13,"좋아요"))
         mRoomList.add(RoomData(105500,"서울시 금천구",11,"2번째 방"))
+
+        mRoomAdapter = RoomAdapter(this,R.layout.room_list_item,mRoomList)
+        roomListView.adapter = mRoomAdapter
     }
 }
