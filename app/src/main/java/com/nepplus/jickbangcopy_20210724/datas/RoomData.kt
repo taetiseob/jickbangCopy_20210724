@@ -32,4 +32,14 @@ class RoomData(
             return thousandStr
         }
     }
+    fun getFloor() : String {
+        if(this.floor>=1){
+            return "${this.floor}"
+        }else if(this.floor == 0){
+            return "반지하${this.floor}"
+        }else{
+            return "지하${-this.floor}"
+
+        }
+    }
 }

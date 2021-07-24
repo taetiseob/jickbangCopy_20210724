@@ -31,7 +31,7 @@ class RoomAdapter(
         val descTxt = row.findViewById<TextView>(R.id.descTxt)
 
         descTxt.text = data.desc
-
+        addressAndPriceTxt.text = "${data.address}, / ${data.getFloor()}층"
 
         priceTxt.text = data.getFormattedPrice()
 
