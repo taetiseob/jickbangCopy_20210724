@@ -18,6 +18,7 @@
         android:padding="20dp"
         android:gravity="center">
         <TextView
+            android:id="@+id/priceTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="8,000"
@@ -25,6 +26,7 @@
             android:textSize="23sp"
             android:textStyle="bold"/>
         <TextView
+            android:id="@+id/descTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="설명 문구 자리"
@@ -49,6 +51,7 @@
             android:paddingBottom="10dp"
             android:gravity="center_vertical">
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="행정 구역"/>
@@ -57,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
             <TextView
+                android:id="@+id/addressTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="서울시 동대문구"
@@ -87,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
             <TextView
+                android:id="@+id/floorTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3층"
